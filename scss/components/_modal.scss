@@ -26,11 +26,11 @@
   top: 8px;
   right: 8px;
   background-color: white;
-}
 
-.modal-btn:hover .modal-close-icon,
-.modal-btn:focus .modal-close-icon {
-  fill: var(--action-color);
+  &:hover .modal-close-icon,
+  &:focus .modal-close-icon {
+    fill: var(--action-color);
+  }
 }
 
 .modal-close-icon {

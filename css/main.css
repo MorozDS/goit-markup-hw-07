@@ -127,6 +127,10 @@ img {
   border-color: var(--action-color);
 }
 
+.modal-form-input:focus + .input-icon {
+  fill: var(--action-color);
+}
+
 .modal-form-wraper {
   display: block;
   position: relative;
@@ -139,10 +143,6 @@ img {
   left: 12px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form-input:focus + .input-icon {
-  fill: var(--action-color);
 }
 
 .modal-form-field {
@@ -193,6 +193,17 @@ img {
   justify-content: center;
 }
 
+.form-checkbox::before {
+  display: block;
+  content: '';
+  height: 15px;
+  width: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 7px;
+}
+
 .modal-form-btn {
   align-self: center;
   padding: 10px 55px;
@@ -210,17 +221,6 @@ img {
   border-radius: 4px;
   border: none;
   margin-top: 30px;
-}
-
-.form-checkbox::before {
-  display: block;
-  content: '';
-  height: 15px;
-  width: 15px;
-  border: 2px solid #212121;
-  border-radius: 2px;
-  cursor: pointer;
-  margin-right: 7px;
 }
 
 .input-form-checkbox:checked + .form-checkbox::before {
