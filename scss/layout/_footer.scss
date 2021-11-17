@@ -32,11 +32,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.address a:hover,
-.address a:focus {
-  color: var(--action-color);
+  & a:hover,
+  & a:focus {
+    color: var(--action-color);
+  }
 }
 
 //Социальные ссылки
@@ -78,12 +78,14 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-link-footer:hover,
-.social-link-footer:focus {
+&:hover,
+&:focus {
   background-color: var(--action-color);
 }
+}
+
+
 
 //Подписка
 .footer-subscribe {
